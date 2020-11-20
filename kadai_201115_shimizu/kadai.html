@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='UTF-8'>
+    <title>お気に入り検索条件</title>
+    <link rel="stylesheet" href="css/kadai.css">
+  </head>
+  <body>
+    <div id='searchCondition'>
+      <h4 class="word">映画/ドラマ評価シート</h4>
+      <form id='searchConditionForm'>
+        <dl>
+          <p class="t2">タイトル</p>
+          <dd><input name='title' id='title' style='width: 500px; height: 25px;' type='text'/></dd>
+          <p class="t2">主演俳優</p>
+          <dd><input name='Name' id='Name' style='width: 500px; height: 25px;' type='text'/></dd>
+          <p class="t2">監督</p>
+          <dd><input name='Director' id='Director' style='width: 500px; height: 25px;' type='text'/></dd>
+          <p class="t2">ジャンル</p>
+          <dd><input name='Music' id='Music' style='width: 500px; height: 25px;' type='text'/></dd>
+          <p class="t2">評価</p>
+          <dd>
+            <input name='evaluation' id='evaluation0' type='radio' value='0' checked><label for='evaluation0'>未選択</label>
+            <input name='evaluation' id='evaluation1' type='radio' value='1'><label for='evaluation1'>最高</label>
+            <input name='evaluation' id='evaluation2' type='radio' value='2'><label for='evaluation2'>おもしろい</label>
+            <input name='evaluation' id='evaluation3' type='radio' value='3'><label for='evaluation3'>普通</label>
+            <input name='evaluation' id='evaluation4' type='radio' value='4'><label for='evaluation4'>つまらない</label>
+            <input name='evaluation' id='evaluation5' type='radio' value='5'><label for='evaluation5'>二度と見ない</label>
+          </dd>
+          <p class="t2" >見た日付</p><dd><input name='Date' id='Date' type='date'/></dd>
+          <p class="t2">何で観たか</p>
+          <dd>
+            <select name='movieType' id='movieType' >
+              <option value=''>*未選択*</option>
+              <option value='1'>Amazon Prime</option>
+              <option value='2'>Netflix</option>
+              <option value='3'>Hulu</option>
+              <option value='4'>Disney+</option>
+            </select>
+          </dd>
+        </dl>
+        <input id='favBtn' type='button' value='登録'/>
+        <input id='clearBtn' type='reset' value='条件をクリア'/>
+      </form>
+    </div>
+    <hr/>
+    <div id='favorite'>
+      <h4>リスト</h4>
+      <form id='favoriteForm'>
+        <select name='favoriteList' id='favoriteList'  size=10>
+        </select>
+      </form>
+      <input id='useBtn' type='button' value='もう一回'/>
+      <input id='deleteBtn' type='button' value='削除'/>
+    </div>
+
+    <div class="search">
+      <form action="#">
+        <input type="text" name="search" value="" id="search" />
+      </form>
+    </div>
+
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/kadai.js"></script>
+  </body>
+</html>

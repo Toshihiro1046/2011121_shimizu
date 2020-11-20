@@ -1,0 +1,23 @@
+
+.title_1{
+    margin: 50px auto;
+    width: 100%;
+    font-size: 80%;
+}
+
+.word{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+
+.t2{
+    margin-top:20px;
+    margin-bottom: 5px;
+    font-size: 25px;
+}
+
+body{
+    background-color: #ddfaff;
+}
+
